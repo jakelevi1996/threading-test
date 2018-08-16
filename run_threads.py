@@ -13,7 +13,7 @@ for _ in range(NUM_THREADS):
     thread_list.append(threading.Thread())
 
 # List of experiments
-experiment_list = [i for i in range(13)]
+experiment_list = np.random.uniform(1, 5, NUM_EXPERIMENTS).tolist()
 
 # Toy function to be run by each thread
 def experiment_func(arg, thread_num):
